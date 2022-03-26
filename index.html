@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,100 +26,59 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+       <!-- TODO add current date function in js -->
+       <p class="lead" id="date"></p>
     </header>
     <div class="container">
-      <button class="row">
-        <label for="text">Task</label>
-      </button>
-    </div>
-    <div class="container">
-       <!-- Timeblocks go here -->
-       <!-- need to make description <p> tags interactive/dynamic & same with -->
-       <div class="time-block" id="time-block">
-         <p>8:00am</p>
-         </div>
-         <div class="row" id="task-to-do">
-           <p>Task Description</p>
-          </div>
-          <div class="time-block" id="time-block">
-            <p>9:00am</p>
-          </div>
-         <div class="row" id="task-to-do">
-           <p>Task Description</p>
-          </div>
-          <div class="time-block" id="time-block">
-            <p>10:00am</p>
-          </div>
-          <div class="row" id="task-to-do">
-            <p>Task Description</p>
-           </div>
-           <div class="time-block" id="time-block">
-             <p>11:00am</p>
-            </div>
-           <div class="row" id="task-to-do">
-             <p>Task Description</p>
-            </div>
-            <div class="time-block" id="time-block">
-              <p>12:00pm</p>
-            </div>
-            <div class="row" id="task-to-do">
-              <p>Task Description</p>
-             </div>
-             <div class="time-block" id="time-block">
-             <p>1:00pm</p>
-             </div>
-             <div class="row" id="task-to-do">
-               <p>Task Description</p>
-              </div>
-              <div class="time-block" id="time-block">
-                <p>2:00pm</p>
-              </div>
-              <div class="row" id="task-to-do">
-                <p>Task Description</p>
-               </div>
-               <div class="time-block" id="time-block">
-                 <p>3:00pm</p>
-                 </div>
-               <div class="row" id="task-to-do">
-                 <p>Task Description</p>
-                </div>
-                <div class="time-block" id="time-block">
-                <p>4:00pm</p>
-              </div>
-                <div class="row" id="task-to-do">
-                  <p>Task Description</p>
-                 </div>
-                 <div class="time-block" id="time-block">
-                   <p>5:00pm</p>
-                  </div>
-                 <div class="row" id="task-to-do">
-                   <p>Task Description</p>
-                  </div>
-                  <div class="time-block" id="time-block">
-                    <p>6:00pm</p>
-                  </div>
-                  <div class="row" id="task-to-do">
-                    <p>Task Description</p>
-                   </div>
-                   <div class="time-block" id="time-block">
-                     <p>7:00pm</p>
-                    </div>
-                   <div class="row" id="task-to-do">
-                     <p>Task Description</p>
-                    </div>
-                    <div class="time-block" id="time-block">
-                      <p>8:00pm</p>
-                    </div>
-                    <div class="row" id="task-to-do">
-                      <p>Task Description</p>
-                     </div>
-                    <div class="time-block" id="time-block">
-                      <p>9:00pm</p>
-                    </div>
-                     <div class="row" id="task-to-do">
-                       <p>Task Description</p>
-                      </div>
+      <!-- Timeblocks go here -->
+      <!-- need to make description <p> tags interactive/dynamic & same with -->
+     <!-- Timeblocks go here -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="time-block col-2">9am</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">10am</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">11am</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">12pm</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">1pm</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">2pm</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">3pm</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">4pm</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
+      <div class="row">
+        <div class="time-block col-2">5pm</div>
+        <textarea class="col-8 description">Description of Task</textarea>
+        <button class="saveBtn col-2">Save</button>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

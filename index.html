@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,63 +26,106 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-       <!-- TODO add current date function in js -->
-       <p class="lead" id="date"></p>
+      <p id="date" class="timer"></p>
+      <p>
+        Past = <span class="past"> color</span> Present =
+        <span class="present"> color</span> Future =
+        <span class="future">color</span>
+      </p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <!-- need to make description <p> tags interactive/dynamic & same with -->
-     <!-- Timeblocks go here -->
+    <!-- Timeblocks go here -->
     <div class="container text-center">
       <div class="row">
-        <div class="time-block col-2">9am</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2" id="workhour">8am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">10am</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2" id="workhour">9am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">11am</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">10am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">12pm</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">11am</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">1pm</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">12pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">2pm</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">1pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">3pm</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">2pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">4pm</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">3pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
+
       <div class="row">
-        <div class="time-block col-2">5pm</div>
-        <textarea class="col-8 description">Description of Task</textarea>
-        <button class="saveBtn col-2">Save</button>
+        <div class="time-block hour col-2">4pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="time-block hour col-2">5pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
+      </div>
+
+      <div class="row">
+        <div class="time-block hour col-2" id="workhour">6pm</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="saveBtn col-2">
+          <i class="far fa-check-square"> Save </i>
+        </button>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

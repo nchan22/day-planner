@@ -24,7 +24,6 @@ https://nchan22.github.io/day-planner/
 ![Alt text](screenshots/screenshot1.jpg)
 ![Alt text](screenshots/screenshot2.jpg)
 ![Alt text](screenshots/screenshot3.jpg)
-![Alt text](screenshots/screenshot4.jpg)
 
 ## Contributors:
 Starter Code by Xandromus (https://github.com/coding-boot-camp/super-disco)

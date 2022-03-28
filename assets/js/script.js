@@ -1,21 +1,17 @@
+// variable list
 var currentDayEl = document.querySelector("#currentDay");
 var scheduleContainerEl = document.querySelector(".container");
-
 var textAreaEl = document.querySelectorAll(".description");
-
 var saveBtnEl = document.querySelectorAll(".saveBtn");
-
 var currentTime = Number(moment().format("H"));
-
 var workHours = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 
 // displaying the day on top of the calender
-
 var displayDay = function () {
   $("#date").text(moment().format("dddd, MMMM Do - h:mm:ss a"));
 };
-// displayDay();
 
+//checking the time for the color of the timeslots
 var checkTime = function () {
   for (var i = 0; i < workHours.length; i++) {
     if (currentTime > workHours[i]) {
@@ -27,10 +23,8 @@ var checkTime = function () {
     }
   }
 };
-// checkTime();
 
 //local storage
-
 var saveDescription = function (event) {
   var time = event.target.parentNode.children[0].textContent;
   var description = event.target.parentNode.children[1].value;
@@ -46,7 +40,6 @@ var getSchedule = function () {
     textAreaEl[i].textContent = saveValue;
   }
 };
-// getSchedule();
 
 //event
 var addEvents = function () {
